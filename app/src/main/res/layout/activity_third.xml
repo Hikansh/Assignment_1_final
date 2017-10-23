@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.assignment.ThirdActivity"
+    android:id="@+id/thirdlayout">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="---Select Your Interests---"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"/>
+
+    <CheckBox
+        android:id="@+id/sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="46dp"
+        android:text="Sports" />
+
+    <CheckBox
+        android:id="@+id/movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/sports"
+        android:layout_marginEnd="22dp"
+        android:text="Movies" />
+
+    <CheckBox
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="News"
+        android:layout_below="@+id/sports"
+        android:layout_alignStart="@+id/sports" />
+
+    <CheckBox
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:layout_alignTop="@+id/news"
+        android:layout_alignStart="@+id/movies" />
+
+    <CheckBox
+        android:id="@+id/fitness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fitness"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/news"
+        android:layout_alignStart="@+id/news" />
+
+    <CheckBox
+        android:id="@+id/gaming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaming"
+        android:layout_alignBaseline="@+id/fitness"
+        android:layout_alignBottom="@+id/fitness"
+        android:layout_alignStart="@+id/food" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_navigate_next_black_24dp"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/gaming"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
